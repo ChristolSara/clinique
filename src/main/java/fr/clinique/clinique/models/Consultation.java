@@ -14,6 +14,7 @@ public class Consultation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Temporal(TemporalType.DATE)
     private Date dateConsultation;
     private String rapport;
     @OneToOne
